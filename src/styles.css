@@ -87,7 +87,7 @@ h1 {
     }
 
     /* Reset the grid-column for 2-column layout */
-    .card:nth-child(n) {
+    .card:nth-child(3n+1):nth-last-child(1), .card:nth-child(n) {
         grid-column: auto;
     }
 }
@@ -98,7 +98,7 @@ h1 {
     }
 
     /* Reset the grid-column for 1-column layout */
-    .card:nth-child(n) {
+    .card:nth-child(3n+1):nth-last-child(1), .card:nth-child(n) {
         grid-column: auto;
     }
 

@@ -51,6 +51,14 @@ h1 {
     flex-direction: column;
 }
 
+.card:nth-child(3n+1):nth-last-child(2) {
+    grid-column: 1;
+}
+
+.card:nth-child(3n+2):nth-last-child(1) {
+    grid-column: 3;
+}
+
 /* Styles for when there are 4 items or less */
 .card:nth-child(3n+1):nth-last-child(1) {
     grid-column: 2;
@@ -87,7 +95,7 @@ h1 {
     }
 
     /* Reset the grid-column for 2-column layout */
-    .card:nth-child(3n+1):nth-last-child(1), .card:nth-child(n) {
+    .card:nth-child(3n+1):nth-last-child(2), .card:nth-child(3n+2):nth-last-child(1), .card:nth-child(3n+1):nth-last-child(1), .card:nth-child(n) {
         grid-column: auto;
     }
 }
@@ -98,7 +106,7 @@ h1 {
     }
 
     /* Reset the grid-column for 1-column layout */
-    .card:nth-child(3n+1):nth-last-child(1), .card:nth-child(n) {
+    .card:nth-child(3n+1):nth-last-child(2), .card:nth-child(3n+2):nth-last-child(1), .card:nth-child(3n+1):nth-last-child(1), .card:nth-child(n) {
         grid-column: auto;
     }
 

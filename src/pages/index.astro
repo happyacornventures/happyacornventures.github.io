@@ -1,17 +1,67 @@
----
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-console.log('This runs in your terminal, not the browser!');
----
-<!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
-<html>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Acorn Ventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+            <div class="container">
+                <h1>Happy Acorn Ventures</h1>
+                <p class="tagline">We build and support ventures from idea to independence</p>
+                <!-- <p class="tagline">Building and supporting ventures from idea to independence.</p> -->
+                <a href="https://cal.com/thatrandybrown" class="cta-button">Schedule a Call</a>
+                <div class="card-grid">
+                    <div class="card">
+                        <h2>DevOps as a Service</h2>
+                        <p class="description">A comprehensive solution for managing development and operations for bootstrapped founders and small startups.</p>
+                        <p class="stage">Stage: Active</p>
+                        <p class="party">Party: First</p>
+                    </div>
+                    <div class="card">
+                        <h2>Business Consulting</h2>
+                        <p class="description">Helping founders go from zero to their first sale, providing tailored support with business formation, bank setup, and growth strategies to ensure their venture takes root and thrives.</p>
+                        <p class="stage">Stage: Incubating</p>
+                        <p class="party">Party: First</p>
+                    </div>
+                    <div class="card">
+                        <h2>Code 43, LLC</h2>
+                        <p class="description">Code 43 is working on making tools for social marketing</p>
+                        <p class="stage">Stage: Incubating</p>
+                        <p class="party">Party: Third</p>
+                    </div>
+                    <div class="card">
+                        <h2>Glass Slipper Craft Boutique, LLC</h2>
+                        <p class="description">A boutique specializing in handcrafted items for all occasions.</p>
+                        <p class="stage">Stage: Incubating</p>
+                        <p class="party">Party: Third</p>
+                    </div>
+                    <div class="card">
+                        <h2>Board Game Design and Development</h2>
+                        <p class="description">We create engaging board games that inspire creativity and fun for all ages.</p>
+                        <p class="stage">Stage: Ideation</p>
+                        <p class="party">Party: First</p>
+                    </div>
+                    <div class="card">
+                        <h2>Some Noodle Shop</h2>
+                        <p class="description">Some Noodle Shop is bringing AI experiences from the future to the present.</p>
+                        <p class="stage">Stage: Ideation</p>
+                        <p class="party">Party: Second</p>
+                    </div>
+                    <!-- Add more cards as needed -->
+                </div>
+                <!-- <div class="container">
+                    <p>The best time to plant a tree was 20 years ago. The second best time is now.</p>
+                    <a href="https://cal.com/thatrandybrown" class="cta-button">Schedule a call to start your future</a>
+                </div> -->
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 Happy Acorn Ventures, LLC.</p>
+        </footer>
+    </div>
+</body>
 </html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>

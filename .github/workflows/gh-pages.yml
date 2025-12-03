@@ -21,9 +21,17 @@ jobs:
       id-token: write   # to verify the deployment originates from an appropriate source
     steps:
       - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '24'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build site
+        run: yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: static/
+          path: dist/
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4

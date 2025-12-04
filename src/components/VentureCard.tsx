@@ -1,12 +1,8 @@
-const VentureCard = () => (
+const VentureCard = ({ title, description, stage, party }) => (
   <div className="card">
-    <h2>Business Consulting</h2>
-    <p className="description">
-      Helping founders go from zero to their first sale, providing tailored
-      support with business formation, bank setup, and growth strategies to
-      ensure their venture takes root and thrives.
-    </p>
-    <p className="stage">Stage: Incubating</p>
-    <p className="party">Party: First</p>
+    <h2>{title}</h2>
+    <p className="description">{description}</p>
+    <p className="stage">Stage: {stage}</p>
+    <p className="party">Party: {party}</p>
   </div>
 );

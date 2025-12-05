@@ -1,4 +1,4 @@
-const VentureCard = ({ title, description, stage, party }) => (
+export const VentureCard = ({ title, description, stage, party }) => (
   <div className="card">
     <h2>{title}</h2>
     <p className="description">{description}</p>
